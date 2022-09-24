@@ -1,0 +1,13 @@
+.containerList{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+a{
+    padding: 5px;
+    font-size: 14px;
+    color: darkgrey;
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+}

@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { GetDone } from './GetDone';
+import { Progreso } from './Progreso';
+import { Search } from './Shearch';
+import { List } from './List';
+import { Item } from './Item';
+import { Button } from './Button';
+
+const todos = [
+  {text: "cortar cebolla", completed: true},
+  {text: "tomar el curso de react", completed: false},
+  {text: "llorar", completed: false},
+
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <GetDone/>
+      <Progreso/>
+      <Search/>
+      <List>
+        {todos.map(todo => (
+          <Item
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}  
+          />
+        ))}
+      </List>
+      <Button/>
+    </main>
+
   );
 }
 

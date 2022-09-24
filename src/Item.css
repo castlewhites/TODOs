@@ -1,0 +1,47 @@
+.item{
+    display: flex;
+    margin: 5px 10px 10px 10px;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.containerLi{
+    display: flex;
+    position: relative;
+    background-color: #474b4e;
+    width: 80%;
+    height: 45px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+
+}
+.Item-p{
+    margin-left: 15px;
+
+}
+.Item-p--complete{
+    text-decoration: line-through;
+}
+.Icon{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Icon-delete{
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+
+.buttonCheck{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+
+}

@@ -1,0 +1,38 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0;
+    /* background-color: #272727; */
+}
+.title{
+    color: #ffff;
+}
+.title span{
+    color: darkgrey;
+}
+.date{
+    color: darkgray;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.imgContainer img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+
+}
